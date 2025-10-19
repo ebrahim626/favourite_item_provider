@@ -1,10 +1,10 @@
 class Item {
   final String name;
-  final String id;
+  final int id;
   final bool favourite;
   Item({required this.id, required this.name, required this.favourite});
 
-  Item copyWith(String? name, String? id, bool? favourite) {
+  Item copyWith(String? name, int? id, bool? favourite) {
     return Item(
       id: id ?? this.id,
       name: name ?? this.name,

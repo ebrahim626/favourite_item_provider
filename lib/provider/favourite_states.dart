@@ -9,11 +9,11 @@ class FavouriteStates {
     required this.favouriteItem,
     required this.search,
   });
-  FavouriteStates copyWith(
+  FavouriteStates copyWith({
     List<Item>? allItem,
     List<Item>? favouriteItem,
     String? search,
-  ) {
+  }) {
     return FavouriteStates(
       allItem: allItem ?? this.allItem,
       favouriteItem: favouriteItem ?? this.favouriteItem,
